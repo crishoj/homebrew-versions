@@ -55,7 +55,7 @@ class Subversion17 < Formula
   end if (build.include? 'perl') or (build.include? 'ruby')
 
   def apr_bin
-    Superenv.bin or "/usr/bin"
+    superbin or "/usr/bin"
   end
 
   def install
